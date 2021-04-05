@@ -39,6 +39,34 @@ class Employees(Resource):
                              City, State, Country, PostalCode, Phone, Fax,
                              Email))
         return {'status':'success'}
+
+
+    def put(self):
+        conn = db_connect.connect()
+        print(request.json)
+        EmployeeId = request.json['EmployeeId']
+        LastName = request.json['LastName']
+        FirstName = request.json['FirstName']
+        Title = request.json['Title']
+        ReportsTo = request.json['ReportsTo']
+        BirthDate = request.json['BirthDate']
+        HireDate = request.json['HireDate']
+        Address = request.json['Address']
+        City = request.json['City']
+        State = request.json['State']
+        Country = request.json['Country']
+        PostalCode = request.json['PostalCode']
+        Phone = request.json['Phone']
+        Fax = request.json['Fax']
+        Email = request.json['Email']
+        query = conn.execute("UPDATE employees SET LastName = '{0}', FirstName = '{1}', Title = '{2}', ReportsTo = '{3}', BirthDate = '{4}', HireDate = '{5}', Address = '{6}', City = '{7}', State = '{8}', Country = '{9}', PostalCode = '{10}', Phone = '{11}', Fax = '{12}', Email  = '{13}' WHERE employeeID = {14};".format(LastName,FirstName,Title,
+                             ReportsTo, BirthDate, HireDate, Address,
+                             City, State, Country, PostalCode, Phone, Fax,
+                             Email, EmployeeId))
+        # print(query)
+        return {'status':'success'}
+
+
 class Tracks(Resource):
     def get(self):
         conn = db_connect.connect()

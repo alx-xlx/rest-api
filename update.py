@@ -12,7 +12,7 @@ newData = {
     'City': 'Edmonton',
     'Country': 'Canada',
     'Email': 'andrew@chinookcorp.com',
-    'EmployeeId': None,
+    'EmployeeId': 2,
     'Fax': '+1 (780) 428-3457',
     'FirstName': '123Andrew',
     'LastName': 'Adamsssss',
@@ -21,8 +21,7 @@ newData = {
     'PostalCode': 'T5K 2N1',
     'ReportsTo': None,
     'State': 'AB',
-    'Title': 'General Manager'
+    'Title': 'Hello People'
     }
-
-r = requests.post(URL, data = json.dumps(newData), headers=headers)
+r = requests.put(URL, data = json.dumps(newData), headers=headers)
 print(r.json())

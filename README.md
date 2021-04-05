@@ -4,6 +4,7 @@
 
 Create a simple REST-API in python using Flask.
 
+We will use [chinook.db](https://cdn.sqlitetutorial.net/wp-content/uploads/2018/03/chinook.zip) as an Example Database, and use [sqlitebrowser](https://sqlitebrowser.org/dl/) software to view database in GUI
 
 ## Requirements
 - Python
@@ -17,7 +18,8 @@ install.bat
 ```
 
 ## Run
-```cmd
+```py
+# nodemon will check for any files changes & auto restart the server
 nodemon main.py
 ```
 
@@ -26,7 +28,6 @@ nodemon main.py
 
 ![](https://i.imgur.com/ULWHETj.png)
 
-You can use [sqlitebrowser](https://sqlitebrowser.org/dl/) software to view database in GUI
 
 ## Example
 
