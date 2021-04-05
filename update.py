@@ -5,8 +5,11 @@ import json
 URL = "http://127.0.0.1:5000/employees"
 headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
 
-# New Employee Details to Upload to database
-newData = {
+# New Employee Details to UPDATE in Database
+# No keys should be empty
+# You would probably GET the details and then change the specific ones and then do PUT
+
+updatedData = {
     'Address': '11120 Jasper Ave NW',
     'BirthDate': '1962-02-18 00:00:00',
     'City': 'Edmonton',
@@ -23,5 +26,6 @@ newData = {
     'State': 'AB',
     'Title': 'Hello People'
     }
-r = requests.put(URL, data = json.dumps(newData), headers=headers)
+
+r = requests.put(URL, data = json.dumps(updatedData), headers=headers)
 print(r.json())
