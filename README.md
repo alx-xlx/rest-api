@@ -1,14 +1,11 @@
 <div align="center">
-<img src="https://i.imgur.com/RMfRyft.png" alt="simple-rest-api" height="">
+<img src="https://i.imgur.com/RMfRyft.png" alt="simple-rest-api">
 </div>
-
 <div align="center">
-
 <img alt="rest-api-license" src="https://img.shields.io/badge/Open_source-MIT-red.svg?logo=git&logoColor=green"/>
 <img alt="rest-api-softwareheritage.org" src="https://archive.softwareheritage.org/badge/origin/https://github.com/Unipisa/CMM/"/>
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/alx-xlx/rest-api">
 <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Falx-xlx%2Frest-api&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Views&edge_flat=false"/>
-
 </div>
 
 Create a simple REST-API in python using Flask.
@@ -43,7 +40,7 @@ nodemon server.py
 http://127.0.0.1:5000/employees/1
 
 <div align="center">
-<img src="https://i.imgur.com/ZOkIH1L.png" alt="simple-rest-api-github" height="">
+<img src="https://i.imgur.com/UKVOGJT.png" alt="simple-rest-api-python-github">
 </div>
 
 ----
