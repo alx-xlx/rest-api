@@ -24,5 +24,6 @@ newData = {
     'Title': 'General Manager'
     }
 
+# use POST
 r = requests.post(URL, data = json.dumps(newData), headers=headers)
 print(r.json())

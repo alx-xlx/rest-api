@@ -38,6 +38,7 @@ class Employees(Resource):
                              ReportsTo, BirthDate, HireDate, Address,
                              City, State, Country, PostalCode, Phone, Fax,
                              Email))
+        query.close()
         return {'status':'success'}
 
 
@@ -63,7 +64,7 @@ class Employees(Resource):
                              ReportsTo, BirthDate, HireDate, Address,
                              City, State, Country, PostalCode, Phone, Fax,
                              Email, EmployeeId))
-        # print(query)
+        query.close()
         return {'status':'success'}
 
 
