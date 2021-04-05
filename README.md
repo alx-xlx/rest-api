@@ -2,7 +2,8 @@
 <img src="https://i.imgur.com/RMfRyft.png" alt="simple-rest-api" height="">
 </div>
 
-Create a REST-API using python
+Create a simple REST-API in python using Flask.
+
 
 ## Requirements
 - Python
