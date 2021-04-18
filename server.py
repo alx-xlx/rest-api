@@ -4,11 +4,16 @@ from sqlalchemy import create_engine
 from json import dumps
 from flask_jsonpify import jsonify
 from flask_cors import CORS, cross_origin
+import re
 
 db_connect = create_engine('sqlite:///chinook.db')
 
 
 app = Flask(__name__)
+app.config['CORS_HEADERS'] = 'Content-Type'
+cors = CORS(app)
+
+
 api = Api(app)
 
 class Employees(Resource):
@@ -95,8 +100,5 @@ api.add_resource(Employees, '/employees') # Route_1
 api.add_resource(Tracks, '/tracks') # Route_2
 api.add_resource(Employees_Name, '/employees/<employee_id>') # Route_3
 
-
-
 if __name__ == '__main__':
-     app.run()
-     
+    app.run()
