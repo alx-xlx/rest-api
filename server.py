@@ -3,8 +3,10 @@ from flask_restful import Resource, Api
 from sqlalchemy import create_engine
 from json import dumps
 from flask_jsonpify import jsonify
+from flask_cors import CORS, cross_origin
 
 db_connect = create_engine('sqlite:///chinook.db')
+
 
 app = Flask(__name__)
 api = Api(app)
