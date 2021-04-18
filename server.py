@@ -102,9 +102,7 @@ class Quotes(Resource):
     def get(self):
         conn = db_connect.connect() # connect to database
         query = conn.execute("select id, quote, author from quotes") # This line performs query and returns json result
-        for i in query.cursor:
-            result = dict(zip(tuple(query.keys()), i))
-        # result = {'data': [dict(zip(tuple (query.keys()) ,i)) for i in query.cursor]}
+        result = {'data': [dict(zip(tuple (query.keys()) ,i)) for i in query.cursor]}
         return jsonify(result)
 
 api.add_resource(Quotes, '/quotes') # Route_1
