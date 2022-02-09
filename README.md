@@ -15,12 +15,22 @@ We will serve the data from [chinook.db](https://cdn.sqlitetutorial.net/wp-conte
 ## 💼 Requirements
 - Python
 - pip
-- npm
+- npm (Optional)
 
 ## ⚙️ Installation
 ```py
-# Install in Windows
+# Automatic Install in Windows
 install.bat
+```
+```py
+# Manually Install in Windows
+pip install flask
+pip install flask-jsonpify
+pip install flask-sqlalchemy
+pip install flask-restful
+npm install nodemon # Optional
+pip install requests
+pip install flask_cors
 ```
 
 ## 🏃 Run
